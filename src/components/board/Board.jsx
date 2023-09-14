@@ -83,21 +83,23 @@ const Board = () => {
           ) : (
             <div className="flex flex-wrap lg:flex-nowrap gap-4 w-full">
               <DragDropContext onDragEnd={onDragEnd} className="w-full ">
-                {Object.entries(columns).map(([columnKey, columnTasks]) => (
-                  <div key={columnKey} className="sm:w-1/3 md:w-1/4">
-                    <h1
+                {
+                  Object.entries(columns).map(([columnKey, columnTasks]) => (
+                    <div key={columnKey} className="sm:w-1/3 md:w-1/4">
+                      <h1
                       className={`text-sm text-neutral-600 uppercase font-semibold border-b-2 p-1 ${columnTasks.color} dark__mode dark:text-gray-200 flex items-center gap-1`}
-                    >
-                      {columnTasks.title}{" "}
-                      <span className="text-xs text-neutral-400 dark:text-neutral-300 dark__mode">
+                      >
+                        {columnTasks.title}
+                        <span className="text-xs text-neutral-400 dark:text-neutral-300 dark__mode">
                         ({columnTasks.items?.length})
                       </span>
-                    </h1>
-                    <Droppable droppableId={`${columnKey}`}>
-                      {(provided) => (
-                        <div
-                          ref={provided?.innerRef}
-                          {...provided?.droppableProps}
+                      </h1>
+                      <Droppable droppableId={`${columnKey}`} type="Tasks">
+                        {
+                          (provided, snapshot) => (
+                            <div
+                          ref={provided.innerRef}
+                          {...provided.droppableProps}
                           className=" flex flex-col gap-2 m-3"
                         >
                           {columnTasks?.items?.map((task, index) => (
@@ -108,10 +110,12 @@ const Board = () => {
                             <span> Add Task</span>
                           </div>
                         </div>
-                      )}
-                    </Droppable>
-                  </div>
-                ))}
+                          )
+                        }
+                      </Droppable>
+                    </div>
+                  ))
+                }
               </DragDropContext>
             </div>
           )}
