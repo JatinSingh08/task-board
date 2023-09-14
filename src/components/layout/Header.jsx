@@ -24,7 +24,7 @@ const Header = () => {
           <span className="p-2 border rounded-sm cursor-not-allowed">
             <AiOutlineArrowLeft className="text-white" />
           </span>
-          <section className="flex items-center justify-center gap-4 border border-t-0 border-b-0 border-l-0 px-4 border-r-gray-300"> 
+          <section className="flex items-center justify-center gap-4 border border-t-0 border-b-0 border-l-0 pr-4 border-r-gray-300"> 
             <h1 className="text-lg text-white font-bold dark:text-slate-50">
               {"Taco's Tacos"}
             </h1>
