@@ -2,7 +2,10 @@
 
 This is a Trello task Board built using ReactJs, React-Beautiful-Dnd and TailwindCSS.
 
-![Light Mode](src/assets/screenshots/screenshot-readme.png)
+![Light Mode](src/assets/taskboardlight.jpg)
+
+
+![Dark Mode](src/assets/taskboarddark.jpg)
 
 ## 👨‍💻 Demo
 
