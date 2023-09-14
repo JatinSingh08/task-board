@@ -11,7 +11,7 @@ const priorityColors = {
 
 const Task = ({ task, index }) => {
   return (
-    <Draggable key={task?.id} draggableId={`${task?.id}`} index={index}>
+    <Draggable key={task?.id} draggableId={`${task.id}`} index={index}>
       {(provided) => (
         <div
           ref={provided?.innerRef}

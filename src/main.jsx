@@ -7,7 +7,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import ThemeProvider from './context/ThemeContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <ThemeProvider>
       <TasksProvider>
         <Router>
@@ -15,5 +14,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Router>
       </TasksProvider>
     </ThemeProvider>
-  </React.StrictMode>,
 )
