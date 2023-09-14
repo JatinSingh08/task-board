@@ -14,7 +14,7 @@ import { CgProfile } from "react-icons/cg";
 
 const Sidebar = () => {
   return (
-    <div className="bg-gray-800 text-white px-2 py-2 w-16 fixed top-0 bottom-0 flex flex-col justify-between items-center">
+    <div className="bg-gray-800 dark:bg-[#0D0D0D] text-white px-2 py-2 w-16 fixed top-0 bottom-0 flex flex-col justify-between items-center">
       <ul className="flex flex-col gap-6 items-center mt-6">
         <li>
           <NavLink
