@@ -3,14 +3,14 @@
 This is a Trello task Board built using `ReactJs`, `React-Beautiful-Dnd` and `TailwindCSS`.
 
 ## Questions
-# Question 1. How would tables & api endpoints updated If a user can create and edit stages for a particular board ?  
-:white_check_mark: Table Changes: Let's say if we introduce a new table (eg. working), to store the stages associated with each each board the table could have columns like `board_id`,`stage_name` & `position` ( to maintain order of stages).
-:white_check_mark:API endpoint changes: we would need some new api endpoints to manage the stages such as
-    - `GET /board/:board_id/stages`: Retrieve all stages for a specific board.
-    - `POST /board/:board_id/stages`: Create a new stage for a board.
-    - `PUT /board/:board_id/stages/:stage_id`: Update the properties of a specific stage.
-    - `DELETE /board/:board_id/stages/:stage_id`: Delete a stage from a board.
-    
+Question 1. How would tables & api endpoints updated If a user can create and edit stages for a particular board ? \ 
+:white_check_mark: Table Changes: Let's say if we introduce a new table (eg. working), to store the stages associated with each each board the table could have columns like `board_id`,`stage_name` & `position` ( to maintain order of stages). \
+:white_check_mark:API endpoint changes: we would need some new api endpoints to manage the stages such as \
+    - `GET /board/:board_id/stages`: Retrieve all stages for a specific board. \
+    - `POST /board/:board_id/stages`: Create a new stage for a board. \
+    - `PUT /board/:board_id/stages/:stage_id`: Update the properties of a specific stage.\
+    - `DELETE /board/:board_id/stages/:stage_id`: Delete a stage from a board.\
+
 ![Light Mode](src/assets/taskboardlight.jpg)
 
 
