@@ -78,7 +78,7 @@ const Board = () => {
           </fieldset>
           {isLoading ? (
             <div>
-              <Loader />
+              <Loader loading={isLoading} />
             </div>
           ) : (
             <div className="flex flex-wrap lg:flex-nowrap gap-4 w-full">
