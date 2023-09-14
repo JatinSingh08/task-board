@@ -11,7 +11,7 @@ This is a Trello task Board built using `ReactJs`, `React-Beautiful-Dnd` and `Ta
     - `GET /board/:board_id/stages`: fetch all stages for a specific board. \
     - `POST /board/:board_id/stages`: Create a new stage for a board. \
     - `PUT /board/:board_id/stages/:stage_id`: Update the properties of a specific stage.\
-    - `DELETE /board/:board_id/stages/:stage_id`: Delete a stage from a board.\
+    - `DELETE /board/:board_id/stages/:stage_id`: Delete a stage from a board.
 
 `Question 2.` How would tables & api endpoints updated If users can comment on tasks ?
 
@@ -34,6 +34,8 @@ This is a Trello task Board built using `ReactJs`, `React-Beautiful-Dnd` and `Ta
 - `Testing`: Perform automated testing, including unit tests and integration tests, to catch and address potential errors before they reach users.
 
 - `Loading Spinners`: Show loading spinner while waiting for the response from the server during actions like moving a task or updating a task. Show error message by replacing loader if request is failed.
+
+## 📸 Screenshots
 
 ![Light Mode](src/assets/taskboardlight.jpg)
 
