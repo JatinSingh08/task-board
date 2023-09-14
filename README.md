@@ -1,6 +1,6 @@
 # 🚀 Zuddl Task Board
 
-This is a Trello task Board built using `ReactJs`, `React-Beautiful-Dnd` and `TailwindCSS`.
+This is a Trello task Board built using `ReactJs`, `React-Beautiful-Dnd`, `Vite` and `TailwindCSS`.
 
 ## Questions
 `Question 1.` How would tables & api endpoints updated If a user can create and edit stages for a particular board ? 

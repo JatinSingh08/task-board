@@ -67,10 +67,8 @@ const TasksProvider = ({ children }) => {
     setSearchText("");
   }, []);
 
-  // Memoize the filteredTasks value
   const filteredTasks = useMemo(() => filterFunction(state), [state]);
 
-  // Memoize the tasks object
   const tasks = useMemo(
     () =>
       filteredTasks?.reduce(
@@ -91,7 +89,6 @@ const TasksProvider = ({ children }) => {
     [filteredTasks]
   );
 
-  // Memoize the boardColumns object
   const boardColumns = useMemo(
     () => ({
       Ready: {
