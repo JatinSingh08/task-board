@@ -61,7 +61,7 @@ const Board = () => {
   }
 
   return (
-    <div className="md:w-full lg:w-[90vw] min-w-full ml-16 bg-gray-100 dark__mode dark:bg-[#232323]">
+    <div className="md:w-full lg:w-[90vw] min-w-full  bg-gray-100 dark__mode dark:bg-[#232323]">
       <Header />
       <div className="w-full mt-4 px-5">
         <div className="flex flex-col w-full gap-6 p-2 min-h-screen">

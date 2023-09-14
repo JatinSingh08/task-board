@@ -91,17 +91,17 @@ const TasksProvider = ({ children }) => {
 
   const boardColumns = {
     Ready: {
-      title: "Ready",
+      title: "Resources",
       items: tasks?.readyTasks,
       color: "border-gray-400",
     },
     "In Progress": {
-      title: "In Progress",
+      title: "Todo",
       items: tasks?.inProgressTasks,
       color: "border-yellow-400",
     },
     Testing: {
-      title: "Testing",
+      title: "Doing",
       items: tasks?.testingTasks,
       color: "border-sky-400",
     },
